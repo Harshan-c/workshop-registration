@@ -26,9 +26,13 @@ image {
 
 
 nav {
+    display:;
+    list-style-type: none;
+    margin-right: 20px;
     background-color:darkkhaki;
     padding: 20px;
-    text-align: center;
+    text-align:right;
+    
 }
 
 
