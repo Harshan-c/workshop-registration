@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.text-container {
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    color:#000;
+}
+
+.text-part {
+    position: relative;
+
+  
+}
+
+.strike-through {
+    color: #000;
+    text-decoration: line-through;
+    animation: strikeThrough 3s forwards;
+}
+
+.rotated {
+    color: #00f;
+    transform: rotate(-90deg);
+    animation: rotateIn 3s 3s forwards; /* Delay to start after strikeThrough animation */
+}
+
+@keyframes strikeThrough {
+    0% {
+        opacity: 1;
+        text-decoration: line-through;
+    }
+    100% {
+        opacity: 0;
+        text-decoration: none;
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+        opacity: 0;
+        transform: rotate(-90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}

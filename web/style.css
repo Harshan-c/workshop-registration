@@ -1,0 +1,106 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: system-ui;
+    line-height: 1.5;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    background-color: #030303;
+}
+
+.typewriter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #030303;
+    z-index: 1000;
+    animation: hide 1s 3s forwards; /* Automatically hides after animation */
+}
+
+.typewriter p {
+    font-family: monospace;
+    font-size: 4rem;
+    margin-inline: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid;
+    animation: typing 1s steps(10) forwards, blink 1s step-end infinite;
+}
+
+.main {
+    padding: 80px 40px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes hide {
+    to {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+    }
+}
+/* Add these new styles at the end of your CSS file */
+
+.main{
+    font-size: 2rem;
+}
+.text-transition {
+    font-weight: bold;
+}
+
+.strike-through {
+    position: relative;
+}
+
+.strike-through::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.strike-through.active::after {
+    width: 100%;
+}
+
+.strike-through.fade-out::after {
+    opacity: 0;
+}
+
+.rotate-text {
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+}
+
+.rotate-text.active {
+    transform: rotateX(360deg);
+}
