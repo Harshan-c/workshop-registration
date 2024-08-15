@@ -1,56 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-size: 1.6rem;
+    background: #fff5da;
+    font-family: 'Luckiest Guy', cursive;
     margin: 0;
-    background-color: #f0f0f0;
 }
 
-.text-container {
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 2.3rem 0 0.5rem;
+    background: #fff5da;
+    z-index: 1;
+}
+
+.logo {
+    text-align: center;
+    font-size: 2vw;
+    text-transform: uppercase;
+    opacity: 0;
     position: relative;
-    font-size: 2rem;
-    font-weight: bold;
-    color:#000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: #F47340;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
-.text-part {
+.menu {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+    background: none;
+    width: 3rem;
+    height: 2rem;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    opacity: 0;
+}
+
+.menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: black;
     position: relative;
-
-  
 }
 
-.strike-through {
-    color: #000;
-    text-decoration: line-through;
-    animation: strikeThrough 3s forwards;
+.menu span:before,
+.menu span:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: inherit;
 }
 
-.rotated {
-    color: #00f;
-    transform: rotate(-90deg);
-    animation: rotateIn 3s 3s forwards; /* Delay to start after strikeThrough animation */
+.menu span:before {
+    top: -8px;
 }
 
-@keyframes strikeThrough {
-    0% {
-        opacity: 1;
-        text-decoration: line-through;
-    }
-    100% {
-        opacity: 0;
-        text-decoration: none;
-    }
+.menu span:after {
+    bottom: -8px;
 }
 
-@keyframes rotateIn {
-    0% {
-        opacity: 0;
-        transform: rotate(-90deg);
-    }
-    100% {
-        opacity: 1;
-        transform: rotate(0);
-    }
-}

@@ -15,6 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setTimeout(() => {
             strikeThrough.classList.add('fade-out');
-        }, 2000);
-    }, 3000);
+        }, 1250);
+    }, 4000);
 });

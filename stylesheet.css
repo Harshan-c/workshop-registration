@@ -18,21 +18,19 @@ header {
 }
 
 image {
-    background-image: bg.jpg;
+    background-image: "bg.jpg";
     background-size: cover;
     background-position: center;
     z-index: 101;
 }
 
 
-nav {
-    display:;
-    list-style-type: none;
-    margin-right: 20px;
+.sidebar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
     background-color:darkkhaki;
     padding: 20px;
-    text-align:right;
-    
 }
 
 
