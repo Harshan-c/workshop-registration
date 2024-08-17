@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -25,7 +24,8 @@ body {
     align-items: center;
     background-color: #fdf8ed;
     z-index: 1000;
-    animation: hide 1s 3s forwards; /* Automatically hides after animation */
+    animation: hide 1s 3s forwards;
+    /* Automatically hides after animation */
 }
 
 .typewriter p {
@@ -69,6 +69,7 @@ header {
     from {
         width: 0;
     }
+
     to {
         width: 100%;
     }
@@ -104,7 +105,7 @@ header {
     top: 50%;
     width: 0;
     height: 4px;
-    background-color: 	#ed1f1f;
+    background-color: #ed1f1f;
     transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
@@ -124,6 +125,7 @@ header {
 .rotate-text.active {
     transform: rotateX(360deg);
 }
+
 .grid-wrapper {
     display: flex;
     justify-content: center;
@@ -164,38 +166,45 @@ header {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
-.grid-item-1 { 
+.grid-item-1 {
     grid-area: box1;
     background-color: #f3b61b;
 }
-.grid-item-2 { 
+
+.grid-item-2 {
     grid-area: box2;
     background-color: #fdfdfd;
 }
-.grid-item-3 { 
+
+.grid-item-3 {
     grid-area: box3;
     background-color: #1c1403;
     color: #fdf8ed;
 }
-.grid-item-4 { 
+
+.grid-item-4 {
     grid-area: box4;
     background-color: #1c1403;
     color: #fdf8ed;
 }
-.grid-item-5 { 
+
+.grid-item-5 {
     grid-area: box5;
     background-color: #76ed5e;
 }
+
 .grid-item-6 {
     grid-area: box6;
     background-color: #bef28c;
 }
-.grid-item-7 { 
+
+.grid-item-7 {
     grid-area: box7;
     background-color: #f3b61b;
 }
 
-.grid-item h1, .grid-item h2 {
+.grid-item h1,
+.grid-item h2 {
     margin-bottom: 1rem;
 }
 
@@ -259,10 +268,12 @@ button:hover {
     grid-column: span 2;
     grid-row: span 1;
 }
+
 .chat-container {
     display: flex;
     flex-direction: column;
 }
+
 .chat-message {
     background-color: #39ff5a;
     border-radius: 15px;
@@ -273,12 +284,9 @@ button:hover {
     transition: opacity 0.5s ease;
     color: #fdf8ed;
 }
+
 .chat-message.right {
     align-self: flex-end;
     background-color: #218aff;
-    color:#fdf8ed
+    color: #fdf8ed
 }
-
-
-
-    
