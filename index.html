@@ -66,7 +66,7 @@
             </div>
             <div class="grid-item grid-item-6">
                 <h2>Register Now</h2>
-                <button>Join</button>
+                <button onclick="navigateToPage()">Join</button>
             </div>
             <div class="grid-item grid-item-7">
                 <h2>Countdown</h2>
@@ -103,7 +103,9 @@
                 animateChat();
             }, 5000); // 5000 milliseconds = 5 seconds
         });
-
+        function navigateToPage() {
+            window.location.href = '/registration/register.html'; // Replace 'your-page.html' with the URL of the page you want to navigate to
+        }
     </script>
 </body>
 
