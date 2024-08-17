@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=New+Amsterdam&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,600;1,600&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* General Styles */
+body {
+    font-family: "Source Code Pro", monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    background-image: url('/assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Glassmorphism Container */
+.container {
+    font-family: "Source Code Pro", monospace;
+    background: rgba(140, 92, 92, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(171, 109, 109, 0.2);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 400px;
+    color: rgb(137, 91, 91); /* Adjust text color for readability */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(102, 98, 98);
+}
+
+/* Form Elements */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-left: 10px;
+    background: rgba(89, 48, 48, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-size: 16px;
+    color: rgb(102, 98, 98);
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    color:white;
+    border: 1px solid rgba(164, 132, 132, 0.3);
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Icons */
+.fa {
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.input-name,
+.input-email,
+.input-mobile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+/* Checkbox and Terms */
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox a {
+    color: #19579d;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.checkbox a:hover {
+    text-decoration: underline;
+}
+
