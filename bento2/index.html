@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Course - Bento Design</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.5;
+            color: #fff;
+            background-color: #030303;
+            padding: 2rem;
+        }
+
+        .grid-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, minmax(150px, auto));
+            gap: 1rem;
+            width: 100%;
+            max-width: 1200px;
+            grid-template-areas:
+                "box1 box2 box2 box3"
+                "box1 box2 box2 box3"
+                "box4 box5 box5 box3"
+                "box4 box5 box5 box3"
+                "box4 box6 box6 box7";
+        }
+
+        .grid-item {
+            background-color: #1a1a1a;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .grid-item-1 { grid-area: box1; }
+        .grid-item-2 { grid-area: box2; }
+        .grid-item-3 { grid-area: box3; }
+        .grid-item-4 { grid-area: box4; }
+        .grid-item-5 { grid-area: box5; }
+        .grid-item-6 { grid-area: box6; }
+        .grid-item-7 { grid-area: box7; }
+
+        .grid-item h1, .grid-item h2 {
+            margin-bottom: 1rem;
+        }
+
+        .grid-item p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .img-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .img-container img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        button {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #4a4a4a;
+            color: #fff;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    "box1 box2"
+                    "box3 box4"
+                    "box5 box6"
+                    "box7 box7";
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "box1" "box2" "box3"
+                    "box4" "box5" "box6"
+                    "box7";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-wrapper">
+        <div class="grid-container">
+            <div class="grid-item grid-item-1">
+                <h1>Web Development</h1>
+                <p>Introduction to modern web technologies</p>
+            </div>
+            <div class="grid-item grid-item-2">
+                <h2>Chat Box</h2>
+                <p>Interactive Q&A session</p>
+                <!-- Placeholder for chat functionality -->
+            </div>
+            <div class="grid-item grid-item-3">
+                <h2>Things You Learn</h2>
+                <div class="img-container">
+                    <img src="/api/placeholder/40/40" alt="HTML">
+                    <img src="/api/placeholder/40/40" alt="CSS">
+                    <img src="/api/placeholder/40/40" alt="JavaScript">
+                    <img src="/api/placeholder/40/40" alt="VS Code">
+                    <img src="/api/placeholder/40/40" alt="GitHub">
+                    <img src="/api/placeholder/40/40" alt="LinkedIn">
+                </div>
+            </div>
+            <div class="grid-item grid-item-4">
+                <h2>When</h2>
+                <p>Aug 26th to 31st</p>
+                <p>7 days intensive course</p>
+            </div>
+            <div class="grid-item grid-item-5">
+                <h1>WEB Start</h1>
+                <p>Begin your journey</p>
+            </div>
+            <div class="grid-item grid-item-6">
+                <h2>Register Now</h2>
+                <button>Join</button>
+            </div>
+            <div class="grid-item grid-item-7">
+                <h2>Countdown</h2>
+                <p>Course starts in:</p>
+                <!-- Placeholder for countdown timer -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
