@@ -94,7 +94,7 @@ document.getElementById('webstart').addEventListener("submit", async function (e
     // Show thank you modal
     thankYouMessage.innerHTML = `
       Thank you for registering!<br>
-      Join our WhatsApp group for more updates: <a href="#" target="_blank">Join WhatsApp Group</a>
+      Join our WhatsApp group for more updates: <a href="https://chat.whatsapp.com/JmtnTSAvvLD1Z1apjgxFFg" target="https://chat.whatsapp.com/JmtnTSAvvLD1Z1apjgxFFg">Join WhatsApp Group</a>
     `;
     modal.style.display = "block";
 

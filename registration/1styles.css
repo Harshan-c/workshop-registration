@@ -132,11 +132,11 @@ label {
 
 /* Modal content */
 .modal-content {
-    background-color: #0d233f;
+    background-color: #131619;
     /* Main background color */
     margin: 10% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #332525;
     border-radius: 8px;
     /* Rounded corners */
     width: 60%;
@@ -149,7 +149,7 @@ label {
 
 /* Close button */
 .close {
-    color: #aaa;
+    color: #d4cbcb;
     float: right;
     font-size: 28px;
     font-weight: bold;
