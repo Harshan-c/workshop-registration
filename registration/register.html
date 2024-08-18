@@ -15,7 +15,6 @@
         <h2>Registration Form</h2>
         <div class="form-container">
             <form action="/submit-registration" id="webstart" method="post">
-               <div class="alert">succesfully registered</div>
 
                 <div class="input-name">
                     <i class="fa fa-user-circle"></i>
@@ -53,11 +52,10 @@
                     <option value="C">C</option>
                 </select><br><br>
 
-                <div class="checkbox">
-                    <input type="checkbox" id="terms" name="terms" required>
-                    <label for="terms">I agree to the <a href="terms-and-conditions" target="_blank">Terms and
-                            Conditions</a></label>
-                </div><br>
+                <input type="checkbox" id="termsCheckbox" required>
+                <label for="termsCheckbox">I agree to the <a href="#" id="openTermsModal">Terms and Conditions</a></label>
+                <span id="termsError" class="error-message"></span>
+                <br>
 
 
 
@@ -65,6 +63,28 @@
             </form>
         </div>
     </div>
+    
+    <div id="thankYouModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="thankYouMessage">Thank you for registering for the event!</p>
+        </div>
+    </div>
+
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Terms and Conditions</h3>
+            <ol>
+            <br><li>Online registration is for reservation only. Final registration is confirmed by paying fees on the event day.</li>
+            <br><li>On-spot registration requires payment on the fest day for participation. Registration is confirmed only after payment.</li>
+            <br><li>Team event registration needs one participant's name online; all team members must be present for on-spot registration.</li>
+            <br><li>Organizers hold authority to dismiss any registration.</li>
+            <br><li>Contact coordinators for further information.</li>
+            </ol>
+        </div>
+    </div>
+
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="/registration/script.js"></script>
