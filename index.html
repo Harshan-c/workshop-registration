@@ -29,8 +29,9 @@
     <div class="grid-wrapper">
         <div class="grid-container">
             <div class="grid-item grid-item-1">
+                <h1>&lt</h1>
                 <h1>Web Development</h1>
-                <p>Introduction to modern web technologies</p>
+                <p>Introduction to Modern Web Technologies</p>
             </div>
             <div class="grid-item grid-item-2">
                 <div class="chat-container" id="chatContainer">
@@ -58,22 +59,27 @@
             <div class="grid-item grid-item-4">
                 <h2>When</h2>
                 <p>Aug 26th to 31st</p>
-                <p>7 days intensive course</p>
+                <p>7 days Intensive Course</p>
             </div>
             <div class="grid-item grid-item-5">
-                <h1>WEB Start</h1>
-                <p>Begin your journey</p>
+                <h1>WEB-Start</h1>
+                <p>&ltStart your Web Journey&gt</p>
             </div>
             <div class="grid-item grid-item-6">
                 <h2>Register Now</h2>
                 <button onclick="navigateToPage()">Join</button>
             </div>
             <div class="grid-item grid-item-7">
-                <h2>Countdown</h2>
-                <p>Course starts in:</p>
-                <!-- Placeholder for countdown timer -->
+                <h2>D Day</h2>
+                <p>in:</p>
+                <h1 id="countdown"></h1>
+                <h1>&gt</h1>
             </div>
         </div>
+    </div>
+    <div id="content">
+        <!-- Placeholder content to enable scrolling -->
+        <div style="height: 20vh;"></div>
     </div>
 
 
@@ -102,7 +108,23 @@
             setTimeout(() => {
                 animateChat();
             }, 5000); // 5000 milliseconds = 5 seconds
+
+            // Countdown logic
+            const countdownElement = document.getElementById('countdown');
+            const targetDate = new Date('August 26, 2024').getTime();
+
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const timeLeft = targetDate - now;
+                const daysLeft = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+
+                countdownElement.textContent = daysLeft + ' days';
+            }
+
+            updateCountdown();
+            setInterval(updateCountdown, 1000 * 60 * 60 * 24); // Update every day
         });
+
         function navigateToPage() {
             window.location.href = '/registration/register.html'; // Replace 'your-page.html' with the URL of the page you want to navigate to
         }
