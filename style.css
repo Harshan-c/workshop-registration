@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=New+Amsterdam&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,600;1,600&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-    font-family: system-ui;
+    font-family: "Source Code Pro", monospace;
     line-height: 1.5;
     color: #1c1403;
     padding: 0;
@@ -104,8 +106,8 @@ header {
     left: 0;
     top: 50%;
     width: 0;
-    height: 4px;
-    background-color: #ed1f1f;
+    height: 2px;
+    background-color: #000000;
     transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
