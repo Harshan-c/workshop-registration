@@ -107,7 +107,7 @@ header {
     top: 50%;
     width: 0;
     height: 2px;
-    background-color: #000000;
+    background-color: #f60808;
     transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
@@ -284,11 +284,37 @@ button:hover {
     max-width: 80%;
     opacity: 0;
     transition: opacity 0.5s ease;
-    color: #fdf8ed;
+    color: #0e0e0e;
 }
 
 .chat-message.right {
     align-self: flex-end;
     background-color: #218aff;
-    color: #fdf8ed
+    color: #151616
 }
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
