@@ -264,6 +264,9 @@ button:hover {
             "box4" "box5" "box6"
             "box7";
     }
+    .strike-through::after {
+        height: 1px;
+    }
 }
 
 .chat {
