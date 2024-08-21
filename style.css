@@ -251,8 +251,8 @@ button:hover {
         grid-template-areas:
             "box1 box2"
             "box3 box4"
-            "box5 box6"
-            "box7 box7";
+            "box5 box7"
+            "box6 box6";
     }
 }
 
@@ -299,9 +299,9 @@ button:hover {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
-  }
-  
-  .tooltip .tooltiptext {
+}
+
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -309,12 +309,17 @@ button:hover {
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-  
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-  }
-  
-  .tooltip:hover .tooltiptext {
+}
+
+.tooltip:hover .tooltiptext {
     visibility: visible;
-  }
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
